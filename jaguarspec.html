@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vintage Car Museum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylespecs.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="#">Admin</a>
+                <ul>
+                    <!-- submenu de admin -->
+                    <li><a href="registaruser.html">Inserir Utilizador</a></li>
+                    <li><a href="usercontrol.php">Listar/Alterar/Eliminar Utilizadores</a></li>
+                    <li><a href="reservas.html">Inserir Reservas</a></li>
+                    <li><a href="listareserva.php">Listar Reservas</a></li>
+                    <li><a href="listarcontactos.php">Listar Contactos</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="title">
+            <h1 style="color: white; font-size: 50px">Jaguar E Type</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Main slider container -->
+        <div class="swiper">
+            <!-- Adicional necessário wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection1.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection2.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection3.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection4.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection5.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection6.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection7.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection8.jpg" /></div>
+                <div class="swiper-slide"><img src="cards/jaguar/jaguar-e-type-60-collection9.jpg" /></div>
+            </div>
+            <!-- Se precisarmos de paginação -->
+            <div class="swiper-pagination"></div>
+            <!-- Se precisarmos de botões de navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+            },
+            // Parâmetros opcionais
+            loop: true,
+
+            // Se precisarmos de paginação
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // Setas de navegação
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <div class="about-section">
+        <h1 style="font-size: 60px;">Especificações</h1>
+        </br>
+        <p style="font-size: 30px;">Um Jaguar tão lendário...</p>
+        </br>
+        <table>
+            <tr>
+                <td>Tipo de combustivel</td>
+                <td>Gasolina</td>
+            </tr>
+            <tr>
+                <td>Aceleração 0 - 100 km/h</td>
+                <td>7.3 sec</td>
+            </tr>
+            <tr>
+                <td>Velocidade Máxima</td>
+                <td>240km\h</td>
+            </tr>
+            <tr>
+                <td>Relação peso/potência</td>
+                <td>4,3 kg/Hp</td>
+            </tr>
+            <tr>
+                <td>Relação peso/torque</td>
+                <td>3 kg/Nm</td>
+            </tr>
+            <tr>
+                <td>Potência</td>
+                <td>265hp</td>
+            </tr>
+            <tr>
+                <td>Potência por litro</td>
+                <td>62.6hp</td>
+            </tr>
+            <tr>
+                <td>Número de cilindrada</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

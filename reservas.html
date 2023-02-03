@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vintage Car Museum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylecontact.css" />
+</head>
+
+<body>
+    <nav>
+        <!-- Menu Principal -->
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="#">Admin</a>
+                <ul>
+                    <!-- submenu de admin -->
+                    <li><a href="registaruser.html">Inserir Utilizador</a></li>
+                    <li><a href="usercontrol.php">Listar/Alterar/Eliminar Utilizadores</a></li>
+                    <li><a href="#">Inserir Reservas</a></li>
+                    <li><a href="listareservar.php">Listar Reservas</a></li>
+                    <li><a href="listarcontactos.php">Listar Contactos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="title">
+        <h1 style="color: white; font-size: 50px; text-align: center;">Reserve o Seu Veiculo</h1>
+    </div>
+
+    <div class="container">
+        <form name="form" action="reservas.php" method="post">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Insira o Seu Email..." required>
+
+            <label for="password">Password</label>
+            <input type="text" style="-webkit-text-security: disc" id="password" name="password"
+                placeholder="Insira a Sua password ..." required>
+
+            <label for="morada">Morada</label>
+            <input type="text" id="morada" name="morada" placeholder="Insira a Sua Morada ..." required>
+
+            <label for="morada2">Morada2</label>
+            <input type="text" id="morada2" name="morada2" placeholder="Insira a Sua Morada2 ...">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Insira a Sua Cidade ..." required>
+
+            <label for="distrito">Distrito</label>
+            <input type="text" id="distrito" name="distrito" placeholder="Insira o Seu Distrito ..." required>
+
+            <label for="cdgpostal">Código Postal</label>
+            <input type="text" id="cdgpostal" name="cdgpostal" placeholder="Insira o Seu Código Postal ..." required>
+
+            <label for="data">Data do Test-Drive</label>
+            <input type="date" id="data" name="data" placeholder="Insira a data ..." required>
+            </br>
+            </br>
+            <label for="carro">Carro para Test-Drive?</label>
+            <select id="carro" name="carro">
+                <option value="Jaguar E-Type">Jaguar E-Type</option>
+                <option value="Rolls Royce Dawn">Rolls Royce Dawn</option>
+                <option value="Mercedes Maybach">Mercedes Maybach</option>
+                <option value="Ford Mustang">Ford Mustang</option>
+                <option value="BMW I8 Roadster">BMW I8 Roadster</option>
+                <option value="Ferrari F8 Spider">Ferrari F8 Spider</option>
+                <option value="Bugatti Veyron">Bugatti Veyron</option>
+                <option value="Bentley Continental GT">Bentley Continental GT</option>
+            </select>
+            <input type="submit" value="Enviar" onclick="myfun()">
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function myfun() {
+        var frm = document.getElementsByName('form')[0];
+        frm.submit();
+        frm.reset();
+        return false();
+    }
+</script>
+
+</html>

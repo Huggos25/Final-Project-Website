@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vintage Car Museum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Menu Principal -->
+    <ul>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="sobrenos.html">Sobre Nós</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+      <li><a href="#">Admin</a>
+        <ul>
+          <!-- submenu de admin -->
+          <li><a href="registaruser.html">Inserir Utilizador</a></li>
+          <li><a href="usercontrol.php">Listar/Alterar/Eliminar Utilizadores</a></li>
+          <li><a href="reservas.html">Inserir Reservas</a></li>
+          <li><a href="listareservar.php">Listar Reservas</a></li>
+          <li><a href="listarcontactos.php">Listar Contactos</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1 style="color: white; font-size: 50px">VINTAGE CAR MUSEUM</h1>
+  </nav>
+  <div class="container">
+    <!-- Main slider container -->
+    <div class="swiper">
+      <!-- Adicional necessário wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="menuslide/2019-bentley-continental-gt-convertible-unveiled-207-mph-luxury-droptop1.jpg" /></div>
+        <div class="swiper-slide"><img src="menuslide/2019-bmw-i8-roadster1.jpg" /></div>
+        <div class="swiper-slide"><img src="menuslide/2024-ford-mustang-dark-horse1.jpg" /></div>
+        <div class="swiper-slide"><img src="menuslide/last-bugatti-veyron-super-sport-coupe-auction1.jpg" /></div>
+        <div class="swiper-slide"><img src="menuslide/mayback1.jpg" /></div>
+        <div class="swiper-slide"><img src="menuslide/novitec-ferrari-f8-spider1.jpg" /></div>
+        <div class="swiper-slide"><img src="menuslide/rolls-royce-dawn-black-badge2.jpg" /></div>
+      </div>
+      <!-- Se precisarmos de paginação -->
+      <div class="swiper-pagination"></div>
+      <!-- Se precisarmos de botões de navegação -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      // Parâmetros opcionais
+      loop: true,
+
+      // Se precisarmos de paginação
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // Setas de navegação
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <div class="main">
+    <div class="cards">
+      <div class="image">
+        <img src="cards/jaguar/jaguar-e-type-60-collection1.jpg" />
+      </div>
+      <div class="title">
+        <h1>Jaguar E-Type</h1>
+      </div>
+      <div class="desc">
+        <button><a href="jaguarspec.html">Especificações</a></button>
+        <button><a href="reservas.html">Reservar</a></button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/rolls royce dawn/rolls-royce-dawn-black-badge3.jpg" />
+      </div>
+      <div class="title">
+        <h1>Rolls Royce Dawn</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/mayback/mayback1.jpg" />
+      </div>
+      <div class="title">
+        <h1>Mercedes Maybach</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/ford mustang/2024-ford-mustang-dark-horse2.jpg" />
+      </div>
+      <div class="title">
+        <h1>Ford Mustang</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/bmw i8/2019-bmw-i8-roadster9.jpg" />
+      </div>
+      <div class="title">
+        <h1>BMW I8 Roadster</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/ferrari f8 spider/novitec-ferrari-f8-spider1.jpg" />
+      </div>
+      <div class="title">
+        <h1>Ferrari F8 Spider</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/bugatti/last-bugatti-veyron-super-sport-coupe-auction1.jpg" />
+      </div>
+      <div class="title">
+        <h1>Bugatti Veyron</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <!--cards-->
+    <div class="cards">
+      <div class="image">
+        <img src="cards/bentley/2019-bentley-continental-gt-convertible-unveiled-207-mph-luxury-droptop1.jpg" />
+      </div>
+      <div class="title">
+        <h1>Bentley Continental GT</h1>
+      </div>
+      <div class="desc">
+        <button>Especificações</button>
+        <button>Reservar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

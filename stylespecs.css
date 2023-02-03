@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: #223;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9b793c;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(112, 102, 42);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #223;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slidechat {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+    object-fit: cover;
+    text-align: center;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 80%;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.title {
+    padding: 35px;
+}
